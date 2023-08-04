@@ -28,11 +28,12 @@ body {
     position: absolute;
     top: 70%;
     left: 50%;
+    background-color: rgba(203, 248, 248, 0.555);
     margin-right: -50%;
     transform: translate(-50%, -50%);
     height: 300px;
     width: 1300px;
-    border: 1px solid rgba(97, 95, 95, 0.829);
+    border: 0.1px solid rgba(97, 95, 95, 0.829);
     border-radius: 10px;
 }
 
@@ -41,6 +42,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
+    /* background-color: rgba(230, 194, 165, 0.541); */
     margin-right: -50%;
     transform: translate(-50%, -50%);
     height: 240px;
@@ -50,12 +52,13 @@ body {
 
 .icons{
     display: inline-block;
+   
     filter:brightness(200);
     /* float: left; */
     height: 200px;
     width: 190px;
     margin: 20px;
-    border: 1px solid rgb(0, 0, 0);
+    border: 0.1px solid rgb(0, 0, 0);
     border-radius: 10px;
 }
 
