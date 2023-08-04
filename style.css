@@ -24,7 +24,6 @@ body {
 }
 
 #weatherContainer {
-    /* Styles for large screens */
     position: absolute;
     top: 70%;
     left: 50%;
@@ -38,11 +37,9 @@ body {
 }
 
 #iconsContainer {
-    /* Styles for large screens */
     position: absolute;
     top: 50%;
     left: 50%;
-    /* background-color: rgba(230, 194, 165, 0.541); */
     margin-right: -50%;
     transform: translate(-50%, -50%);
     height: 240px;
@@ -54,7 +51,6 @@ body {
     display: inline-block;
    
     filter:brightness(200);
-    /* float: left; */
     height: 200px;
     width: 190px;
     margin: 20px;
@@ -72,11 +68,22 @@ body {
     width: 100%;
 }
 @media (max-width: 768px) {
-    #weatherContainer, #iconsContainer, .icons {
+    #iconsContainer, .icons {
         width: 100%;
         left: 0;
         transform: none;
         margin: 2px;
+    }
+    #weatherContainer {
+        position: static;
+        top: auto;
+        background-color: rgba(203, 248, 248);
+        left: auto;
+        margin-right: 0;
+        transform: none;
+        width: 100%;
+        height: auto;
+        border: none;
     }
 }
 
