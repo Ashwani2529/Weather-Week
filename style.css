@@ -40,23 +40,17 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
+    display: flex;
     margin-right: -50%;
     transform: translate(-50%, -50%);
     height: 240px;
-    width: 1200px;
+    width:1350px;
+    align-items: center;
+    justify-content: center;
     border-radius: 10px;
 }
 
-.icons{
-    display: inline-block;
-   
-    filter:brightness(200);
-    height: 200px;
-    width: 190px;
-    margin: 20px;
-    border: 0.1px solid rgb(0, 0, 0);
-    border-radius: 10px;
-}
+
 
 .image{
     height: 140px;
@@ -67,24 +61,19 @@ body {
     height: 140px;
     width: 100%;
 }
-@media (max-width: 768px) {
-    #iconsContainer, .icons {
-        width: 100%;
-        left: 0;
-        transform: none;
-        margin: 2px;
-    }
-    #weatherContainer {
-        position: static;
-        top: auto;
-        background-color: rgba(203, 248, 248);
-        left: auto;
-        margin-right: 0;
-        transform: none;
-        width: 100%;
-        height: auto;
-        border: none;
-    }
+
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    filter: brightness(200);
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    border: 0.1px solid rgb(0, 0, 0);
+    border-radius: 10px;
 }
 
 .weather {
@@ -94,17 +83,39 @@ body {
     color: #000;
     font-weight: 800;
     font-weight: bold;
+    flex-grow: 1; 
 }
-
 .minValues, .maxValues {
     text-align: center;
-    display: contents;
-    border-radius: 5px;
+    display:contents;
+    border-radius: 1px;
     height: 25px;
-    font-weight: 800;
+    font-weight: 750;
     color: #000;
-    width: 85px;
+    width: 100px;
     margin: 0;
     margin-bottom: 5px;
     margin-left: 5px;
+}
+
+@media (max-width: 1366px) {
+    #weatherContainer {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1440px) {
+    #iconsContainer {
+        width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    #weatherContainer {
+        width: 90%;
+        top: 60%;
+    }
+    #iconsContainer {
+        width: 95%;
+    }
 }
